@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event bubbling </title>
+</head>
+<body>
+    <div class="container">
+        <span class="child_container">
+            <div class="child">
+                I am a child 
+            </div>
+        </span>
+    </div>
+    <script>
+        const clicked1 = document.querySelector('.child');
+        clicked1.addEventListener('click' , (event)=>{
+            event.stopPropagation();
+            alert("Child was clicked  ")
+        }) 
+        const clicked2 = document.querySelector('.child_container');
+        clicked2.addEventListener('click' , ()=>{
+            alert("child_container was clicked  ")
+        })
+        const clicked3 = document.querySelector('.container');
+        clicked3.addEventListener('click' , ()=>{
+            alert("container was clicked  ")
+        })
+        
+    </script>
+</body>
+</html>

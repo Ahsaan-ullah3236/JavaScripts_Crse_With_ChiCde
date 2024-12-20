@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settimeout and clear timeout </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f0f9ff, #cbebff, #a5d8ff);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #user_input {
+            padding: 0.75rem;
+            width: 250px;
+            font-size: 1rem;
+            border: 2px solid #a5d8ff;
+            border-radius: 25px;
+            outline: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        #user_input:focus {
+            border-color: #5aa9ff;
+            box-shadow: 0 4px 12px rgba(0, 150, 255, 0.2);
+        }
+
+        button {
+            padding: 0.75rem 2rem;
+            margin: 0.5rem;
+            font-size: 1rem;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+            font-weight: bold;
+        }
+
+        button#start {
+            background: linear-gradient(45deg, #00c853, #64dd17);
+        }
+
+        button#stop {
+            background: linear-gradient(45deg, #d32f2f, #ff5252);
+        }
+
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Add some fucntionaly </h1>
+    <input type="text" value="" id="user_input">
+    <div id="ub"></div>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    <script>
+        var z =2
+        var ans;
+        var final
+           function myfunction() {
+             ans = 2*z
+             final= ans*ansx
+             const inp = document.getElementById("ub").innerHTML=final
+             const inpt = document.getElementById("user_input").setAttribute("value" , final)
+
+             console.log(final)
+            ;
+           }
+           var clearTime;
+           const startButton = document.querySelector("#start");
+           startButton.addEventListener('click',function(){
+            clearTime = setInterval(myfunction, 2000);
+           })
+
+           const stopButton = document.getElementById("stop");
+           stopButton.addEventListener('click' , ()=>{
+            clearInterval(clearTime)
+           })
+
+    </script>
+</body>
+
+</html>

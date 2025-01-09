@@ -1,5 +1,32 @@
 // let score = 33;
 // console.log(typeof score);
+// let score = true;
+// console.log(typeof score);
+// console.log(typeof(score));
+// const newScore = Number (score)
+// console.log(typeof newScore, typeof score);
+// console.log(newScore);
+
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
+console.log(+"");
+console.log("fdfsf");
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // let score1 = "lahore";
 // console.log(typeof score1);
@@ -35,15 +62,15 @@
 // console.log(3 <= 3);
 // console.log(3 >= 1);
 // console.log(null == undefined);
-console.log(3>0);
-console.log(3<0);
-console.log(3<=0);
-console.log(3>=0);
-console.log(3!=0);
-console.log(3==3);
+// console.log(3>0);
+// console.log(3<0);
+// console.log(3<=0);
+// console.log(3>=0);
+// console.log(3!=0);
+// console.log(3==3);
 
-lo
-console.log(3===0);
+// lo
+// console.log(3===0);
 
 
 

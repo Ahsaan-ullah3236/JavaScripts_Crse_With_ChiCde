@@ -19,3 +19,8 @@ The course focuses on building a strong foundation in JavaScript and applying it
 ## Acknowledgments
 - Course by: **Hitesh Choudhary** (YouTube Channel)
 
+- ## How to Use
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Ahsaan-ullah3236/JavaScripts_Crse_With_ChiCde.git
+

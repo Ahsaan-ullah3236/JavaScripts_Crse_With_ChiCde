@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project2.css">
+</head>
+<style>
+    
+/* General container styling */
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form input fields */
+form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+form input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Results section styling */
+#results {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e6f7ff;
+    border-left: 4px solid #007bff;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Weight guide styling */
+#weight-guid {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #999;
+    font-size: 14px;
+    color: #555;
+}
+
+#weight-guid h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+
+</style>
+
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <form>
+            <p><label> Height in CM </label><input type="text" id="height"></p>
+            <p><label> Weight in kG </label><input type="text" id="weight"></p>
+            <button>Calculate</button>
+            <div id="results"></div>
+            <div id="weight-guid">
+                <h3>BMI Weight guid</h3>
+                <p>Under weight = less then 18.6</p>
+                <p>Normal page = 18.6 and 24.9</p>
+                <p>over weight = greater then 24.9</p>
+            </div>
+        </form>
+    </div>
+  
+</body>
+<script src="Project_2.js">
+    </script>   
+</html>

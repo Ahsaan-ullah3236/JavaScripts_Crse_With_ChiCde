@@ -5,23 +5,23 @@ const blackBtn = document.querySelector('#black');
 const yellowBtn = document.querySelector('#yellow');
 // const buttons = document.querySelector('#buttons'); 
 
-const buttons = document.querySelector('#buttons'); 
-const buttonConfigs = [
-    { id: 'green', color: 'green', delay: 1000 },
-    { id: 'grey', color: 'grey', delay: 2000 },
-    { id: 'black', color: 'black', delay: 1000 },
-    { id: 'yellow', color: 'yellow', delay: 1000 },
-];
+// const buttons = document.querySelector('#buttons'); 
+// const buttonConfigs = [
+//     { id: 'green', color: 'green', delay: 1000 },
+//     { id: 'grey', color: 'grey', delay: 2000 },
+//     { id: 'black', color: 'black', delay: 1000 },
+//     { id: 'yellow', color: 'yellow', delay: 1000 },
+// ];
 
-buttonConfigs.forEach(config => {
-    const button = document.querySelector(`#${config.id}`);
-    button.addEventListener('click', function () {
-        console.log(`${config.color} Btn is clicked`);
-        setTimeout(() => {
-            buttons.style.backgroundColor = config.color;
-        }, config.delay);
-    });
-}); 
+// buttonConfigs.forEach(config => {
+//     const button = document.querySelector(`#${config.id}`);
+//     button.addEventListener('click', function () {
+//         console.log(`${config.color} Btn is clicked`);
+//         setTimeout(() => {
+//             buttons.style.backgroundColor = config.color;
+//         }, config.delay);
+//     });
+// }); 
 
 
 // This is For the GreenBtn

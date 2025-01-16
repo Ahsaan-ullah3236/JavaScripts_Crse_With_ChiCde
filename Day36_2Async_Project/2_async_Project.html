@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScripts</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+<script>
+    const startBtnId =  document.querySelector('#start')
+    const stopBtnId = document.querySelector('#stop')
+
+    startBtnId.addEventListener('click' , function (){
+        const setIntervalId =  setInterval(function(){
+            console.log("Ahsan", new Date().toLocaleTimeString());
+        },1000);
+        stopBtnId.addEventListener('click', function(){
+            clearInterval(setIntervalId);
+            console.log("It will be a stop of the ");
+            
+        })
+        
+    })
+ 
+
+    // startBtnId.addEventListener('click', function() {
+    //   var setIntervalId=  setInterval(() => {
+    //     console.log("Ahsan", new Date().toLocaleTimeString());
+    //    }, 1000);
+        
+    // })
+    // stopBtnId.addEventListener('click', function() {
+    //     clearInterval(setIntervalId , 1000)
+    // })
+ 
+</script>
+</body>
+</html>

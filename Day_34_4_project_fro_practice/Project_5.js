@@ -26,3 +26,7 @@ stopBtn.addEventListener('click', function () {
     clearInterval(intervalId);
     intervalId = null;
 });
+
+
+
+

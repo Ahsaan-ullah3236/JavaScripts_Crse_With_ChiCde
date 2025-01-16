@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is the Dom Practice </h1>
+    <button class="btn">stop</button>
+
+    <script>
+
+        const myName = function(){
+            console.log("Printing after the two second");  
+        }
+        const changeText= function(){
+            document.querySelector('h1').innerHTML = " This is the second dom Practice"
+        }
+        const changeMe = setTimeout(changeText , 2000)
+        document.querySelector('.btn').addEventListener('click', function(){
+            clearTimeout(changeMe)
+            console.log("ok stop every thoing ");
+            
+        })
+    </script>
+
+
+ <!-- <script>
+     const thisIsH1 = document.querySelector('h1');
+    console.log(thisIsH1);
+
+    let count = 0; // Counter to track executions
+    const intervalID = setInterval(function () {
+        count++;
+        console.log("Printing after the two seconds");
+        if (count === 10) {
+            clearInterval(intervalID); // Stops the interval after 10 executions
+            console.log("Interval stopped after 10 executions");
+        }
+    }, 1000); -->
+ </script>
+</body>
+</html>

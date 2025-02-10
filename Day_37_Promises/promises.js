@@ -1,13 +1,16 @@
-const foo = () => {
-    let a = 1;
-    var b = 2;
-    const c = 3;
-   }
-   
-
-   foo();
-   console.log(a);
-   console.log(b);
-   console.log(c);
- 
-   
+const promiseOne = new Promise(function (resolve, reject ){
+    // do an async task 
+    setTimeout (function () {
+        console.log("async task is complete ");
+        
+    }, 1000);
+});
+let a=3;
+let b=3; 
+let c=a+b;
+console.log(c);
+promiseOne.then(function () {
+    console.log("promise is resolved");
+}).catch(function () {
+    console.log("promise is rejected");
+});
